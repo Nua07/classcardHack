@@ -15,8 +15,8 @@ function sendScore(score_input) {
         dataType: "json",
         success: function(data) {
             if (data.result == "ok") {
-                alert("성공\n" + JSON.stringify(data))
                 tid = data.tid
+                alert("성공\n" + JSON.stringify(data))
             } else {
                 alert("에러\n" + JSON.stringify(data))
             }
